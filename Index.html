@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title></title>
+  </head>
+
+  <body>
+    <Header class="header">
+      <div class="title">Statistic of Findjobs</div>
+    </Header>
+
+    <!-- <Nav class="Nav" id="myNav">
+      <ui class="Nav_itemlist">
+        <li class="pri_btn"><a href="#a2">App Download</a></li>
+        <li class="pri_btn"><a href="#a1">Employer</a></li>
+        <li class="pri_btn"><a href="#a5">Jobs Created</a></li>
+        <li class="pri_btn"><a href="#a4">Job Applications</a></li>
+        <li class="pri_btn"><a href="#a3">Broadcast</a></li>
+      </ui>
+    </Nav> -->
+
+    <div class="content">
+      <div class="card">
+        <div class="Subtitle">
+          <p>Total number of Apps Download : <span>41977</span></p>
+        </div>
+        <div id="chartContainer2"></div>
+      </div>
+      <div class="card">
+        <div class="Subtitle">
+          <p>Total number of Employers Onboard : <span>703</span></p>
+        </div>
+        <div id="chartContainer1"></div>
+      </div>
+      <div class="card">
+        <div class="Subtitle">
+          <p>Total number of Jobs Created : <span>7129</span></p>
+        </div>
+        <div id="chartContainer5"></div>
+      </div>
+      <div class="card">
+        <div class="Subtitle">
+          <p>Total number of Job Applications : <span>40192</span></p>
+        </div>
+        <div id="chartContainer4"></div>
+      </div>
+      <div class="card">
+        <div class="Subtitle">
+          <p>Total number of Apps Download : <span>4995</span></p>
+        </div>
+        <div id="chartContainer3"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer_text ">
+          © 2019 FindJob Pte. Ltd. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="chart.js"></script>
+
+    <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function() {
+        myFunction();
+      };
+
+      // Get the header
+      var header = document.getElementById("myNav");
+
+      // Get the offset position of the navbar
+      var sticky = header.offsetTop;
+
+      // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+
+    <!-- <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function(e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+          });
+        });
+      });
+    </script> -->
+  </body>
+</html>

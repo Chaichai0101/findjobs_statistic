@@ -1,0 +1,218 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(218, 224, 230);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  background: #f4f8f9;
+}
+
+p {
+  text-align: center;
+  margin: 0;
+}
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+br {
+}
+
+.container {
+  max-width: 60%;
+  margin: auto;
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #324146;
+  height: 5rem;
+  display: stick;
+}
+
+.title {
+  display: flex;
+  font-weight: 600;
+  color: aliceblue;
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-content: center;
+  align-content: center;
+}
+
+span {
+  font-weight: 800;
+  color: rgb(43, 140, 153);
+  font-size: 1.2rem;
+}
+.Subtitle {
+  display: flex;
+  font-weight: 600;
+  color: rgb(116, 131, 143);
+  font-size: 1.2rem;
+  margin: 2rem auto 0.7rem auto;
+  justify-content: flex-start;
+}
+
+.Nav {
+  background: #232f33;
+  height: 72px;
+  z-index: 20;
+}
+
+.Nav_itemlist {
+  display: flex;
+  padding-top: 1rem;
+  justify-content: center;
+}
+
+.pri_btn {
+  align-content: bottom;
+  color: aliceblue;
+  /* background: #596980; */
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  border-radius: 4px;
+}
+
+.pri_btn:hover {
+  cursor: pointer;
+  align-content: bottom;
+  color: aliceblue;
+  background: #25889c;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  border-radius: 4px;
+}
+
+.pri_btn:active {
+  align-content: bottom;
+  color: aliceblue;
+  background: #25889c;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  border-radius: 4px;
+}
+
+.pri:last-child {
+  margin-right: 0;
+}
+
+footer {
+  display: flex;
+  background: #eceff3;
+  height: 4rem;
+}
+
+.footer_text {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgb(93, 97, 99);
+  align-items: center;
+  justify-content: center;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+#chartContainer2 {
+  width: 60%;
+  height: 325px;
+  margin: 0rem auto 2rem auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#chartContainer1 {
+  width: 60%;
+  height: 325px;
+  margin: 0rem auto 2rem auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#chartContainer5 {
+  width: 60%;
+  height: 325px;
+  margin: 0rem auto 2rem auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#chartContainer3 {
+  width: 60%;
+  height: 325px;
+  margin: 0rem auto 2rem auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#chartContainer4 {
+  width: 60%;
+  height: 325px;
+  margin: 0rem auto 2rem auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Small screen */
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+  #chartContainer2 {
+    width: 90%;
+    height: 325px;
+    margin: 0rem auto 2rem auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  #chartContainer1 {
+    width: 90%;
+    height: 325px;
+    margin: 0rem auto 2rem auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  #chartContainer5 {
+    width: 90%;
+    height: 325px;
+    margin: 0rem auto 2rem auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  #chartContainer3 {
+    width: 90%;
+    height: 325px;
+    margin: 0rem auto 2rem auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  #chartContainer4 {
+    width: 90%;
+    height: 325px;
+    margin: 0rem auto 2rem auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  footer {
+    height: 3rem;
+  }
+
+  .footer_text {
+    font-size: 0.7rem;
+  }
+}
